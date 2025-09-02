@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,4 +11,29 @@
   font-family: var(--fonte-titulo);
   font-size: var(--font-size-xl);
   align-self: flex-start;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--margin-xl) auto;
+  max-width: 1200px;
+  padding: 0 var(--padding-s);
+}
+
+.titulo {
+  color: var(--preto);
+  font-family: var(--fonte-titulo);
+  font-size: var(--font-size-xl);
+  align-self: flex-start;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 1.75rem;
+    text-align: center;
+    align-self: center;
+  }
 }

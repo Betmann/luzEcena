@@ -1,10 +1,12 @@
 .cabecalho {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: var(--gap-xl);
+  /* justify-content: center; */
+  justify-content: space-between;
+  gap: var(--gap-m);
   background-color: var(--branco);
-  padding: var(--padding-s) 0;
+  padding: var(--padding-s) var(--padding-m);
 }
 
 .menuitem {
@@ -13,8 +15,21 @@
 
 .icones {
   display: flex;
-  gap: var(--gap-xl);
+  flex-wrap: wrap;
+  /* gap: var(--gap-xl); */
+  gap: var(--gap-m);
   font-family: var(--fonte-texto);
   font-size: var(--font-size-m);
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: var(--gap-s);
+  }
+
+  .icones {
+    justify-content: center;
+  }
 }

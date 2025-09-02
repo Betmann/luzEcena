@@ -1,8 +1,27 @@
-.link {
+/* .link {
   text-decoration: none;
   color: var(--preto);
 }
 
 .link:hover {
   transform: scale(1.1);
+} */
+
+
+.link {
+  text-decoration: none;
+  color: var(--preto);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  color: var(--azul);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .link {
+    font-size: var(--font-size-s);
+  }
 }

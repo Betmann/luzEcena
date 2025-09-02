@@ -6,4 +6,19 @@
   color: var(--preto);
   font-family: var(--fonte-texto);
   font-size: var(--font-size-m);
+  min-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .input {
+    font-size: var(--font-size-s);
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    font-size: var(--font-size-s);
+    min-width: 160px;
+  }
 }

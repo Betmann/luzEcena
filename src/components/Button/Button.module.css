@@ -1,10 +1,23 @@
-.botao {
+/* .botao {
   padding: var(--padding-s);
   font-family: var(--fonte-texto);
   font-size: var(--font-size-s);
   border: none;
   border-radius: 8px;
   cursor: pointer;
+} */
+
+.botao {
+  padding: var(--padding-s) var(--padding-m);
+  font-size: var(--font-size-s);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
 }
 
 .default {

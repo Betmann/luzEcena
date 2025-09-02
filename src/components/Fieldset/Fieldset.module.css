@@ -1,11 +1,22 @@
-.inputWrapper {
+/* .inputWrapper {
   width: 40vw;
   height: 3rem;
   padding: var(--padding-xs) var(--padding-s);
   border-radius: 8px;
   display: flex;
   align-items: center;
+} */
+
+.inputWrapper {
+  width: 100%;
+  max-width: 400px;
+  height: 3rem;
+  padding: var(--padding-xs) var(--padding-s);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
+
 
 .primary {
   border: 3px solid var(--cinza-escuro);
@@ -21,4 +32,10 @@
   color: var(--preto);
   font-family: var(--fonte-texto);
   font-size: var(--font-size-m);
+}
+
+@media (max-width: 600px) {
+  .inputWrapper {
+    max-width: 100%;
+  }
 }
